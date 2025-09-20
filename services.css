@@ -1,0 +1,174 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Outfit;
+}
+body{
+    background:transparent;
+    width:100%;
+}
+.text-box{
+    display: flex;
+    gap:10px;
+    margin: 10px;
+    
+}
+.box-row{
+    background: white;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 20px 35px rgba(152, 152, 151, 0.9);
+    text-align: center; 
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.box-row h1 {
+    font-size: 24px;
+    color: rgb(35, 35, 35);
+}
+.box-row p {
+    font-size: 18px;
+    color: rgb(80, 79, 79);
+}
+.material-symbols-outlined.md-18{
+    font-variation-settings:
+    'FILL' 9,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+    color: #1a8fef;
+    font-size: 49px;
+    margin: auto auto;
+    padding: auto auto; 
+    box-shadow: 0 20px 35px rgba(226, 240, 244, 0.9);
+    border-radius:40px;
+  }
+   .services_dropdown{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    font-size: 20px;
+    border-radius: 20px;
+  }
+  .services_dropdown select{
+    font-size: 18px;
+    border-radius: 20px;
+    
+  }
+/*-----------Best Seller in home decors--------------*/
+.products-slider-with-price{
+    background: #ffffff;
+    margin: 0px 20px;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+}
+.products-slider-with-price .products{
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    margin-top: 20px;
+}
+.product-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    min-height: 110px;
+    background: #fdfcfc;
+    border-radius: 20px;
+    transition: 1s;
+    max-width: 100%;
+    max-height: 100%;  
+}
+.product-card img{
+    width: 250px;
+    height: 250px;
+    margin: 20px 20px;
+    border-radius: 20px;
+    box-shadow: 0 20px 35px rgba(156, 134, 97, 0.9);
+    transition: 0.5s;
+}
+.product-card img:hover{
+    transform: scale(1.1);
+}
+/*----------search bar------------*/
+ 
+.service-dropdown{
+    margin-left: 650px;
+    height: 50px;
+    border-radius: 20px 20px 20px 20px;
+    cursor: pointer; 
+}
+.service-dropdown:hover{
+    color: rgb(0, 112, 110);
+}
+.service-dropdown option{
+    cursor: pointer; 
+}
+/*===============================================================*/  
+  @media only screen and (max-width: 900px){
+    nav{
+        flex-wrap: wrap;
+    }
+    .text-box{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .box-row p {
+        font-size: 12px;      
+    }
+   
+    .product-card {
+        width: 140px;
+        height: 140px;
+    }
+    .product-card img{
+        width: 100px;
+        height: 100px;
+    }
+    .product-card-table img{
+        width: 120px;
+        height: 120px;
+    }
+
+}
+@media only screen and (max-width: 600px){
+    .notification-bar-top{
+        font-size: 13px;
+        gap:10px;
+        overflow-x:scroll;
+    }
+    
+    .notification-bar-top::-webkit-scrollbar{
+        display: block;
+    }  
+    .header-slider img{
+        min-height: 200px;
+    }
+    .header-slider a{
+        top: 28%;
+        padding: 2vh 1vw;
+        font-size: 15px;
+    }
+    .footer-logo-number p{
+        margin:2%
+    }
+    footer{
+        font-size: 10px;
+        text-align: center;
+    }
+    .dropdown-content{
+        height: 150px;
+        margin: 0px 0px -195px 10px;
+    }
+   .nav-text{
+     padding: 8px 0px 10px 0px;
+   }
+   .service-dropdown{
+    margin-left: 65px;
+   }
+}
+
